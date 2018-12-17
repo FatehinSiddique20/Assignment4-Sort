@@ -3,7 +3,7 @@
 class SelectionSort
 {
 public:
-    SelectionSort();
+  SelectionSort();
     ~SelectionSort();
     void SelectionSorter(int arr[], int arr_size);
 };

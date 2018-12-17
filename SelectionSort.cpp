@@ -9,7 +9,7 @@ SelectionSort::~SelectionSort()
 }
 inline void Swap(int &a, int &b)
 {
-    int k = a;
+    int k =  a;
     a = b;
     b = k;
 }

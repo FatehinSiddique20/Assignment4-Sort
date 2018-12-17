@@ -16,17 +16,17 @@ inline void Swap(int &a, int &b)
 void SelectionSort::SelectionSorter(int arr[], int arr_size)
 {
     cout <<"SelectionSort :"<<endl;
-    for(int i = 0; i < arr_size - 1; ++i)
+    for(int index1 = 0; index1 < arr_size - 1; ++index1)
     {
-        int min = i;
-        for(int j = i+1; j < arr_size; ++j){
-            if(arr[j] < arr[min])
-                min = j;
+        int min = index1;
+        for(int index2 = index1+1; index2 < arr_size; ++index2){
+            if(arr[index2] < arr[min])
+                min = index2;
         }
-        Swap(arr[min], arr[i]);
-       for(int k = 0; k < arr_size; ++k)
+        Swap(arr[min], arr[index1]);
+       for(int index3 = 0; index3 < arr_size; ++index3)
     {
-        cout << arr[k]<<" ";
+        cout << arr[index3]<<" ";
     }
     cout <<endl;
     }
